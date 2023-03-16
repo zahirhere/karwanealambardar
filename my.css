@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+font-family: sans-serif;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+.top-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+    background:#f4c023;
+
+}
+.top-bar span{
+    color: #000000;
+}
+.top-bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.top-bar li {
+        margin: 0px 8px;
+        font-size: 22px;
+}
+
+.top-bar a{
+    color: #000000;
+
+}
+
+.top-bar a:hover{
+    color: rgb(255, 255, 255);
+
+}
+
+
+.Background{
+  
+    width: 100%;
+    height: 130vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45),rgba(0, 0, 0, 0.45)),
+    url(images/12.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: slider 20s linear infinite;
+}
+@keyframes slider {
+    0%{
+    background-image: url(images/123.jpg);
+    }
+    25% {
+      background-image: url(images/124.jpg); 
+    }
+    50% {
+        background-image: url(images/125.jpg); 
+    }
+    75% {background-image: url(images/123.jpg); }
+    100% {background-image: url(images/124.jpg); }
+}
+
+
+.navbar {
+    margin: 0px;
+    width:96.7%;
+    padding: 25px;
+    justify-content: space-between;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.429);
+
+   
+
+}
+
+
+.text{
+    color: rgb(232, 185, 19);
+    font-family:cursive;
+position: absolute;
+left: 8%;
+top: 12%;
+font-weight: bold;
+font-size: 20px;
+}
+.img-services {
+margin-left: 80px;
+}
+.ziyarat1
+    {
+        margin-top: -18.5%;
+        margin-left: 69%;
+        margin-bottom: 15%;
+    font-size: 20px;
+}
+
+.img-packagess{
+    margin-left: 100px;
+}
+.img-packages {
+    display: none;
+}
+.package-include {
+    display: none;
+}
+
+.hotel{
+    margin-top: -15%;
+    margin-left: 13%;
+    margin-bottom: 15%;
+font-size: 20px;
+}
+
+.food {
+    margin-top: -21%;
+    margin-left: 41%;
+    margin-bottom: 15%;
+font-size: 20px;
+}
+.logo {
+width: 80px;
+cursor: pointer;
+margin-top: -2%;
+margin-left: 10px%;
+
+}
+
+
+
+
+.navbar ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 25px 40px;
+    position: relative;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    position: absolute;
+    background: rgb(250, 186, 26);
+    bottom: -10px;
+    left: 0;
+    transition: 0.5s;
+}
+.navbar ul li:hover:after {
+    width: 100%;
+}
+.ul li ul {
+    background-color:rgba(0, 0, 0, 0.401) ;
+}
+.ul li ul li {
+    float: none;
+}
+ul li ul {
+    display: none;
+}
+ul li:hover ul {
+    display:block;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 80%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: white;
+   
+
+}
+.content h1 {
+    font-size: 55px;
+    margin-top: 80px;
+}
+
+.content p {
+    margin:20px;
+    line-height: 25px;
+    font-weight: 100;
+    font-size: 25px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    .Background {
+
+    }
+.navbar ul li {
+    display: none;
+}
+.navbar {
+    background-color:rgba(0, 0, 0, 0);
+}
+.logo {
+   width:200px;
+margin-left: 110px;
+  justify-content: center;
+}
+.content {
+    display: none;
+}
+.text {
+    display: none;
+}
+.img-services {
+    width: 500px;
+    margin-left: -5px;
+}
+.hotel {
+font-size: 10px;
+margin-left: 40px;
+margin-top: -80px;
+}
+.food {
+    font-size: 10px;
+    margin-left: 200px;
+    margin-top: -120px; 
+}
+.ziyarat1{
+font-size: 10px;
+    margin-left: 350px;
+    margin-top: -100px; 
+}
+.img-packagess {
+    display: none;
+}
+.img-packages {
+    display: block;
+    width: 500px;
+    margin-left: -10px;
+}
+
+.package-include {
+    display:block;
+    width: 300px;
+    margin: 50px 80px 0px;
+}
+}
